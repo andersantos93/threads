@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000000;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+svg {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#side-menu {
+  display: flex;
+  flex-direction: column;
+  width: 245px;
+  height: 100dvh;
+  padding: 20px 25px;
+  gap: 10px;
+  position: fixed;
+  justify-content: space-between;
+}
+
+#side-menu .middle-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#side-menu .footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.fa-brands.fa-threads {
+  font-size: 38px;
+}
+
+#side-menu .option svg {
+  width: 24px;
+  height: 24px;
+}
