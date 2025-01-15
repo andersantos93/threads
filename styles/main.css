@@ -4,8 +4,12 @@
   padding: 0;
 }
 
+:root {
+  --body-background: #000000;
+}
+
 body {
-  background-color: #000000;
+  background-color: var(--body-background);
   color: white;
   font-family: "Roboto", sans-serif;
 }
@@ -13,28 +17,6 @@ body {
 a {
   text-decoration: none;
   color: white;
-}
-
-#side-menu {
-  display: flex;
-  flex-direction: column;
-  height: 100dvh;
-  padding: 20px 25px;
-  gap: 10px;
-  position: fixed;
-  justify-content: space-between;
-}
-
-#side-menu .middle-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-#side-menu .footer-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
 }
 
 .fa-brands.fa-threads {
@@ -51,9 +33,36 @@ a {
   text-align: center;
 }
 
+.open-app {
+  color: black;
+  background-color: white;
+  width: 101px;
+  height: 36px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.open-app a {
+  position: absolute;
+  color: black;
+  padding: 9px 18px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 550;
+}
+
 @media screen and (max-width: 699px) {
   #side-menu {
     display: none;
+  }
+
+  #top-menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-between;
   }
 
   #footer-menu {
@@ -81,6 +90,32 @@ a {
 }
 
 @media screen and (min-width: 700px) {
+  #top-menu {
+    display: none;
+  }
+
+  #side-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    padding: 20px 25px;
+    gap: 10px;
+    position: fixed;
+    justify-content: space-between;
+  }
+
+  #side-menu .middle-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #side-menu .footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
   #footer-menu {
     display: none;
   }
