@@ -41,8 +41,56 @@ a {
   font-size: 30px;
 }
 
-#side-menu .option svg {
+.option svg {
   width: 26px;
   height: 26px;
   color: #4d4d4d;
+}
+
+.add-thread {
+  text-align: center;
+}
+
+@media screen and (max-width: 699px) {
+  #side-menu {
+    display: none;
+  }
+
+  #footer-menu {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    justify-content: space-evenly;
+    gap: 20px;
+    background-color: #151515;
+  }
+
+  #footer-menu .option {
+    align-self: center;
+  }
+
+  .add-thread {
+    width: calc(20% - 8px);
+    height: 40px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #202020;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #footer-menu {
+    display: none;
+  }
+
+  .add-thread {
+    width: 60px;
+    height: 48px;
+    padding: 10px;
+    margin-left: -14px;
+    border-radius: 15px;
+    background-color: #171717;
+  }
 }
