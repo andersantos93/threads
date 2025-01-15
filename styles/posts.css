@@ -33,11 +33,13 @@
   font-weight: 400;
 }
 
+.card-post {
+  padding-right: 2.3rem;
+}
+
 .card-post .post-image {
   max-width: 100%;
   width: 430px;
-  object-fit: cover;
-  /* height: auto; */
   margin-top: 15px;
   margin-left: 42px;
   border: 1px solid rgba(243, 245, 247, 0.15);
@@ -52,4 +54,33 @@
   border-top: none;
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
+}
+
+.actions {
+  display: flex;
+  gap: 25px;
+  margin-top: 12px;
+  margin-left: 44px;
+}
+
+.actions .action {
+  display: flex;
+  gap: 5px;
+}
+
+.actions .action > svg {
+  width: 18px;
+  height: 18px;
+  fill: transparent;
+}
+
+.actions .action > svg:not(.repost-svg) {
+  stroke: var(--actions-color);
+}
+
+.actions .action > span {
+  color: var(--actions-color);
+  align-self: center;
+  height: 12px;
+  font-size: 12px;
 }
