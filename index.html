@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Threads</title>
-    <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="./styles/posts.css" />
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/posts.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link href="./assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
-    <link href="./assets/fontawesome/css/brands.css" rel="stylesheet" />
-    <link href="./assets/fontawesome/css/solid.css" rel="stylesheet" />
+      rel="stylesheet">
+    <link href="./assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="./assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="./assets/fontawesome/css/solid.css" rel="stylesheet">
   </head>
   <body>
     <nav aria-label="Menu navigation">
@@ -169,10 +168,10 @@
       </aside>
     </nav>
     <main>
-      <section id="tabs">
+      <div id="tabs">
         <div class="tab">For you</div>
         <div class="tab">Following</div>
-      </section>
+      </div>
 
       <div class="content">
         <div class="content-for-you">
@@ -198,10 +197,10 @@
           </div>
         </div>
 
-        <section id="container">
+        <div id="container">
           <div id="new-post">
             <div class="new-post-content">
-              <img src="./images/avatar/darth-vader.jpg" />
+              <img src="./images/avatar/darth-vader.webp" alt="darth vader image">
               <form id="thread-form" action="/submit" method="post">
                 <input
                   type="text"
@@ -209,7 +208,7 @@
                   name="name"
                   placeholder="Start a thread..."
                   required
-                />
+                >
                 <div class="send-thread">
                   <button type="submit">Post</button>
                 </div>
@@ -219,7 +218,7 @@
           </div>
           <div id="posts">
             <div class="post">
-              <img class="profile-image" src="./images/avatar/tennistv.jpg" />
+              <img class="profile-image" src="./images/avatar/tennistv.webp" alt="tennis tv profile image">
               <span class="profile-name"
                 >tennistv
                 <time
@@ -246,8 +245,9 @@
                 <div class="card-post-image">
                   <img
                     class="post-image"
-                    src="./images/posts/47296152818479730619022204.jpg"
-                  />
+                    src="./images/posts/47296152818479730619022204.webp"
+                    alt="post image"
+                  >
                 </div>
               </div>
 
@@ -334,8 +334,9 @@
             <div class="post">
               <img
                 class="profile-image"
-                src="./images/avatar/new-york-times.jpg"
-              />
+                src="./images/avatar/new-york-times.webp"
+                alt="new york profile image"
+              >
               <span class="profile-name"
                 >nytimes
                 <time
@@ -357,8 +358,9 @@
                 <div class="card-post-image">
                   <img
                     class="post-image"
-                    src="./images/posts/472450894_18491555728017035_9068426672529175111_n.jpg"
-                  />
+                    src="./images/posts/472450894_18491555728017035_9068426672529175111_n.webp"
+                    alt="post image"
+                  >
                 </div>
               </div>
 
@@ -445,8 +447,9 @@
             <div class="post">
               <img
                 class="profile-image"
-                src="./images/avatar/stormtrooper.jpg"
-              />
+                src="./images/avatar/stormtrooper.webp"
+                alt="stormtrooper profile image"
+              >
               <span class="profile-name"
                 >stormtrooper
                 <time
@@ -464,7 +467,8 @@
                   <img
                     class="post-image"
                     src="./images/posts/star_wars_darth_vader.gif"
-                  />
+                    alt="darth vader gif"
+                  >
                 </div>
               </div>
 
@@ -549,7 +553,10 @@
             <div class="divider"></div>
 
             <div class="post">
-              <img class="profile-image" src="./images/avatar/go-canada.jpg" />
+              <img 
+                class="profile-image" 
+                src="./images/avatar/go-canada.webp" 
+                alt="go canada profile image">
               <span class="profile-name"
                 >canada
                 <time
@@ -569,8 +576,8 @@
                 <div class="card-post-image">
                   <img
                     class="post-image"
-                    src="./images/posts/pexels-andre-furtado-43594-2916828.jpg"
-                  />
+                    src="./images/posts/pexels-andre-furtado-43594-2916828.webp" alt="post image"
+                  >
                 </div>
               </div>
 
@@ -652,7 +659,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </main>
     <footer>
