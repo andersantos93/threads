@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(10, 10, 10);
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 15px;
+}
+
+.container span {
+  color: rgb(243, 245, 247);
+  font-weight: 500;
+}
+
+.container p {
+  color: rgb(119, 119, 119);
+}
+
+.container a {
+  background-color: #fff;
+  border-radius: 10px;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 8px 16px;
+  width: 65px;
+  height: 34px;
+}

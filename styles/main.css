@@ -124,7 +124,12 @@ a {
 }
 
 @media screen and (min-width: 700px) {
-  #top-menu {
+  body {
+    background-color: var(--body-secondary-background);
+  }
+
+  #top-menu,
+  #footer-menu {
     display: none;
   }
 
@@ -155,10 +160,6 @@ a {
     gap: 30px;
   }
 
-  #footer-menu {
-    display: none;
-  }
-
   .add-thread {
     width: 60px;
     height: 48px;
@@ -182,10 +183,6 @@ a {
 }
 
 @media screen and (min-width: 830px) {
-  body {
-    background-color: var(--body-secondary-background);
-  }
-
   .content {
     max-width: var(--posts-width-md-size);
     margin-left: auto;
