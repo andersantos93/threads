@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 1.5rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
 .post .profile-image {
@@ -97,6 +97,33 @@
     border: 1px solid var(--posts-border-color);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+  }
+
+  .content-for-you {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .content-for-you h6 {
+    text-align: center;
+    font-size: 15.5px;
+    font-weight: 500;
+    color: var(--color-description);
+  }
+
+  .content-for-you .switch-post {
+    background-color: var(--posts-background);
+    padding: 2px 5px;
+    border: 1px solid var(--posts-border-color);
+    width: 24px;
+    height: 24px;
+    border-radius: 40px;
+  }
+
+  .content-for-you .switch-post svg {
+    width: 12px;
+    height: 12px;
   }
 
   #new-post > .divider {
