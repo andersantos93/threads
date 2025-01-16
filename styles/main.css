@@ -16,7 +16,7 @@
 body {
   background-color: var(--body-background);
   color: white;
-  font-family: "Simple Thread", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -56,9 +56,20 @@ a {
   font-weight: 550;
 }
 
+.content-for-you {
+  text-align: center;
+  font-size: 15.5px;
+  font-weight: 500;
+  color: var(--color-description);
+}
+
 @media screen and (max-width: 699px) {
   .content {
     padding: 10px 1rem 90px 1rem;
+  }
+
+  .content-for-you {
+    display: none;
   }
 
   #side-menu {
@@ -161,8 +172,10 @@ a {
 
   .content {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
     max-width: 100%;
-    padding: 5rem;
+    padding: 1.5rem 5rem 0 5rem;
   }
 }
 
