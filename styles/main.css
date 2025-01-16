@@ -5,9 +5,12 @@
 }
 
 :root {
-  --body-background: #181414;
+  --body-background: rgb(16, 16, 16);
+  --posts-background: rgb(24, 24, 24);
+  --posts-border-color: rgb(45, 45, 45);
   --color-description: rgb(243, 245, 247);
   --actions-color: rgb(204, 204, 204);
+  --posts-width-md-size: 830px;
 }
 
 body {
@@ -129,6 +132,10 @@ a {
     gap: 30px;
   }
 
+  .option svg {
+    fill: transparent;
+  }
+
   #side-menu .footer-menu {
     display: flex;
     flex-direction: column;
@@ -150,5 +157,20 @@ a {
 
   #tabs {
     display: none;
+  }
+
+  .content {
+    display: flex;
+    max-width: 100%;
+    padding: 5rem;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .content {
+    max-width: var(--posts-width-md-size);
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0;
   }
 }
