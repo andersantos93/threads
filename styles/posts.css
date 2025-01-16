@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding: 1.5rem;
 }
 
 .post .profile-image {
@@ -86,15 +87,68 @@
 
 .divider {
   border-bottom: 1px solid #262626;
+  width: 100%;
 }
 
 @media screen and (min-width: 700px) {
-  #posts {
+  #container {
     background-color: var(--posts-background);
-    padding: 1.5rem;
     border-radius: 25px;
     border: 1px solid var(--posts-border-color);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+  }
+
+  #new-post > .divider {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .new-post-content {
+    display: flex;
+    gap: 10px;
+    padding: 25px 26px 20px 26px;
+  }
+
+  .new-post-content img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
+
+  .new-post-content form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .new-post-content form input {
+    background-color: transparent;
+    border: none;
+  }
+
+  .new-post-content form input {
+    width: 90%;
+    color: white;
+  }
+
+  .new-post-content form input:focus {
+    outline: none;
+  }
+
+  .new-post-content form input::placeholder {
+    color: #777;
+    font-size: 15px;
+  }
+
+  .new-post-content form button {
+    background-color: transparent;
+    width: 63px;
+    padding: 10px;
+    border: 1px solid var(--posts-border-color);
+    border-radius: 10px;
+    color: var(--color-description);
+    font-weight: 700;
+    font-size: 14px;
   }
 }

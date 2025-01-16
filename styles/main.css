@@ -6,6 +6,7 @@
 
 :root {
   --body-background: rgb(16, 16, 16);
+  --body-secondary-background: rgb(10, 10, 10);
   --posts-background: rgb(24, 24, 24);
   --posts-border-color: rgb(45, 45, 45);
   --color-description: rgb(243, 245, 247);
@@ -119,6 +120,10 @@ a {
     border-bottom: 1px solid #4d4d4d;
     justify-content: space-around;
   }
+
+  #new-post {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -180,6 +185,10 @@ a {
 }
 
 @media screen and (min-width: 830px) {
+  body {
+    background-color: var(--body-secondary-background);
+  }
+
   .content {
     max-width: var(--posts-width-md-size);
     margin-left: auto;
