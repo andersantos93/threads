@@ -177,7 +177,9 @@
         <div class="content-for-you">
           <h6>For you</h6>
           <div class="switch-post">
-            <svg
+            <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+            <label for="dropdown-toggle" class="dropdown-button">
+              <svg
               aria-label="More"
               role="img"
               viewBox="0 0 13 12"
@@ -194,18 +196,29 @@
                 stroke-width="1.5"
               ></path>
             </svg>
+              </label>
+              <ul class="dropdown-menu">
+                <li>For you</li>
+                <li>Following</li>
+                <li>Linked</li>
+                <li>Saved</li>
+                <li><div class="divider"></div></li>
+                <li>Create new feed</li>
+              </ul>
           </div>
         </div>
 
         <div id="container">
           <div id="new-post">
             <div class="new-post-content">
-              <img src="./images/avatar/darth-vader.webp" alt="darth vader image">
+              <picture>
+                <img src="./images/avatar/darth-vader.webp" alt="darth vader image">
+              </picture>
               <form id="thread-form" action="/submit" method="post">
                 <input
                   type="text"
-                  id="name-input"
-                  name="name"
+                  id="thread-input"
+                  name="thread"
                   placeholder="Start a thread..."
                   required
                 >
@@ -243,11 +256,13 @@
 
               <div class="card-post">
                 <div class="card-post-image">
-                  <img
-                    class="post-image"
-                    src="./images/posts/47296152818479730619022204.webp"
-                    alt="post image"
-                  >
+                    <picture>
+                        <img
+                            class="post-image"
+                            src="./images/posts/47296152818479730619022204.webp"
+                            alt="fonseca tennis player"
+                        >
+                    </picture>
                 </div>
               </div>
 
